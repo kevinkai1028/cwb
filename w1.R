@@ -14,11 +14,17 @@ names(x) = title
 data201001=x[grep("2010-01", x$測站最高氣壓時間), ]
 data201002=x[grep("2010-02", x$測站最高氣壓時間), ]
 data201007=x[grep("2010-07", x$測站最高氣壓時間), ]
+data201010=x[grep("2010-10", x$測站最高氣壓時間), ]
 plot(data201007$測站氣壓,type="o", pch=16, col="black",las=1,xlab="日期" ,
      ylab="大氣壓", main="2010/07", axes=TRUE)
 plot(data201001$測站氣壓,type="o", pch=16, col="black",las=1,xlab="日期" ,
      ylab="大氣壓", main="2010/01", axes=TRUE)
 plot(data201002$測站氣壓,type="o", pch=16, col="black",las=1,xlab="日期" ,
      ylab="大氣壓", main="2010/02", axes=TRUE)
-
+mode(x)
+mode(201010)
+a=1:10
+mode(a)
+b="hello"
+mode(b)
 
